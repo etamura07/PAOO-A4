@@ -4,7 +4,6 @@
     *ngFor="let rec of recomendacoes"
   >
     <p style="text-align: center">{{ rec.createdAt }} - {{ rec.descricao }}</p>
-    <button mat-button color="warn" (click)="onDelete(rec.id)">REMOVER</button>
   </mat-card>
 </mat-accordion>
 

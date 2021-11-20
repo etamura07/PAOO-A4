@@ -31,8 +31,4 @@ export class RecomendacaoListaComponent
     this.recomendacaoSubscription.unsubscribe()
   }
 
-  onDelete (id: string): void {
-    this.recomendacaoService.removerRecomendacao(id)
-  }
-
 }
