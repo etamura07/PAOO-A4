@@ -1,0 +1,17 @@
+<mat-accordion *ngIf="recomendacoes.length > 0">
+  <mat-card
+    style="margin-bottom: 1rem; background-color: #d8d8d8"
+    *ngFor="let rec of recomendacoes"
+  >
+    <p style="text-align: center">{{ rec.createdAt }} - {{ rec.descricao }}</p>
+    <button mat-button color="warn" (click)="onDelete(rec.id)">REMOVER</button>
+  </mat-card>
+</mat-accordion>
+
+<p
+  *ngIf="recomendacoes.length <= 0"
+  class="mat-body-1"
+  style="text-align: center"
+>
+  Nenhuma recomendação cadastrada
+</p>
